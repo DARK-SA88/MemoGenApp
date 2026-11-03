@@ -6,12 +6,12 @@
 <meta name="theme-color" content="#2a0f5c">
 <title>NexFly Memo Studio</title>
 <!-- PWA Settings -->
-<link rel="manifest" href="/manifest.json">
-<meta name="theme-color" content="#000000">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#2a0f5c">
 <script>
   if ('serviceWorker' in navigator) {
     window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js')
+      navigator.serviceWorker.register('sw.js')
         .then((reg) => {
           console.log('Service Worker registered! Scope:', reg.scope);
         })
